@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | Adeel Jaffar Video Editor</title><meta name="description" content="Adeel Jaffar — professional video editor offering YouTube editing, Reels, Shorts, thumbnails, cinematic editing, color grading and motion graphics.">
+<link rel="icon" href="./assets/aj-logo.jpg"><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><img src="./assets/aj-logo.jpg" alt="Adeel Jaffar logo"><span>Adeel Jaffar <span style="color:#ff5252">Video Editor</span></span></a>
+    <button class="menu" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+    <nav class="nav-links">
+      <a class="" href="index.html">Home</a>
+      <a class="" href="services.html">Services</a>
+      <a class="" href="portfolio.html">Portfolio</a>
+      <a class="" href="about.html">About Us</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a class="btn btn-red" href="contact.html#order">Order Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="section"><div class="container">
+  <div class="kicker">Contact & Orders</div><h1 style="font-family:'Space Grotesk';font-size:clamp(40px,6vw,68px);line-height:1.05">Let’s make your next <span style="color:#ff5252">video.</span></h1>
+  <p class="lead">Use the form to prepare an order message. Clicking “Send Order on WhatsApp” opens WhatsApp with your details already filled in.</p>
+  <div class="contact-grid" style="margin-top:30px">
+    <div class="card">
+      <h3>Contact Details</h3>
+      <div class="contact-list">
+        <div class="contact-item"><small>WhatsApp</small><a href="https://wa.me/923201047224" target="_blank">+92 320 1047224</a></div>
+        <div class="contact-item"><small>Email</small><a href="mailto:adeeljaffar90@gmail.com">adeeljaffar90@gmail.com</a></div>
+        <div class="contact-item"><small>Fiverr</small><a href="https://www.fiverr.com/s/VrY8Dem" target="_blank">Open Fiverr Profile / Gig</a></div>
+      </div>
+      <a class="fiverr" href="https://www.fiverr.com/s/VrY8Dem" target="_blank"><span class="fiverr-badge">fi</span> Hire me on Fiverr ↗</a>
+      <div class="notice" style="margin-top:18px">No account or special software is needed to use the order button — it simply opens WhatsApp with your project details.</div>
+    </div>
+    <div class="card" id="order">
+      <h3>Place an Order</h3>
+      <form onsubmit="return orderWhatsApp(this)">
+        <div class="form-row"><label>Name<input name="name" required placeholder="Your name"></label><label>Service<select name="service" required><option value="">Select a service</option><option>Professional Video Editing</option><option>YouTube Video Editing</option><option>Reels / Shorts</option><option>Ads / Brand Video</option><option>Thumbnail / Canva Design</option><option>Color Grading</option><option>Motion Graphics</option><option>Other</option></select></label></div>
+        <label>Estimated Budget<select name="budget"><option>Not sure yet</option><option>Under $25</option><option>$25–$50</option><option>$50–$100</option><option>$100+</option></select></label>
+        <label>Project Details<textarea name="details" required placeholder="Tell me about your video, duration, deadline, style, references, etc."></textarea></label>
+        <button class="btn btn-red" type="submit">Send Order on WhatsApp →</button>
+      </form>
+    </div>
+  </div>
+</div></section>
+
+<section class="section" id="rating"><div class="container">
+  <div class="section-head"><div><div class="kicker">Client Feedback</div><h2>Rate the service.</h2></div><p class="lead">Choose 1–5 stars and send your feedback directly to WhatsApp.</p></div>
+  <div class="card" style="max-width:720px">
+    <form onsubmit="return reviewWhatsApp(this)">
+      <div class="rating" aria-label="5 star rating">
+        <input id="star5" name="rating" type="radio" value="5"><label for="star5" title="5 stars">★</label>
+        <input id="star4" name="rating" type="radio" value="4"><label for="star4" title="4 stars">★</label>
+        <input id="star3" name="rating" type="radio" value="3"><label for="star3" title="3 stars">★</label>
+        <input id="star2" name="rating" type="radio" value="2"><label for="star2" title="2 stars">★</label>
+        <input id="star1" name="rating" type="radio" value="1"><label for="star1" title="1 star">★</label>
+      </div>
+      <div class="rating-help">Select your rating, write a short review, then send it on WhatsApp.</div>
+      <div class="form-row"><label>Name (optional)<input name="reviewName" placeholder="Your name"></label><label>Review<input name="review" placeholder="Your feedback"></label></div>
+      <button class="btn btn-blue" type="submit">Submit Rating on WhatsApp</button>
+      <div id="reviewThanks" class="rating-help"></div>
+    </form>
+  </div>
+  <div class="section-head" style="margin-top:42px"><div><div class="kicker">Reviews</div><h2>What clients say</h2></div></div>
+  <div id="reviewsList" class="reviews-grid"></div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© 2026 Adeel Jaffar Video Editor. All rights reserved.</div>
+    <div>Video Editing • Thumbnails • Social Media Content</div>
+  </div>
+</footer>
+<a class="float-wa" href="https://wa.me/923201047224?text=Hello%20Adeel%20Jaffar%2C%20I%20want%20to%20discuss%20a%20video%20editing%20project." target="_blank" aria-label="WhatsApp">✆</a>
+<script src="script.js"></script>
+</body></html>
