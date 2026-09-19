@@ -68,10 +68,79 @@
 </div></section>
 
 <section class="section" id="reviews">
-   ...
-</section>
+  <div class="container">
 
-<section class="section" id="contact">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Client Reviews</div>
+        <h2>What clients say.</h2>
+      </div>
+
+      <p class="lead">
+        Share your experience and rate my video editing services.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="card">
+        <h3>Leave a Review ⭐</h3>
+
+        <form onsubmit="return reviewWhatsApp(this)">
+
+          <label>
+            Your Name
+            <input type="text" name="reviewName"
+              placeholder="Enter your name" required>
+          </label>
+
+          <label>Your Rating</label>
+
+          <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">★</label>
+
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">★</label>
+
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">★</label>
+
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">★</label>
+
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">★</label>
+          </div>
+
+          <div class="rating-help">
+            Click on 1 to 5 stars to give your rating.
+          </div>
+
+          <label>
+            Your Review
+            <textarea name="review"
+              placeholder="Write your experience..." required></textarea>
+          </label>
+
+          <button class="btn btn-red" type="submit">
+            ⭐ Submit Review
+          </button>
+
+          <p id="reviewThanks" class="rating-help"></p>
+
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="kicker">Customer Feedback</div>
+        <h3>Reviews</h3>
+        <div id="reviewsList" class="reviews-grid"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
 <section class="section" id="contact"><div class="container"><div class="kicker">Contact & Orders</div><h2>Let’s make your next <span style="color:#ff5252">video.</span></h2><p class="lead">WhatsApp: +92 320 1047224 · Email: adeeljaffar90@gmail.com</p>
   <div class="contact-grid" style="margin-top:30px"><div class="card"><h3>Contact</h3><div class="contact-list"><div class="contact-item"><small>WhatsApp</small><a href="https://wa.me/923201047224" target="_blank">+92 320 1047224</a></div><div class="contact-item"><small>Email</small><a href="mailto:adeeljaffar90@gmail.com">adeeljaffar90@gmail.com</a></div><div class="contact-item"><small>Fiverr</small><a href="https://www.fiverr.com/s/VrY8Dem" target="_blank">Open Fiverr Profile / Gig</a></div></div></div>
   <div class="card" id="order"><h3>Place an Order</h3><form onsubmit="return orderWhatsApp(this)"><div class="form-row"><label>Name<input name="name" required placeholder="Your name"></label><label>Service<select name="service" required><option value="">Select a service</option><option>Professional Video Editing</option><option>YouTube Video Editing</option><option>Reels / Shorts</option><option>Ads / Brand Video</option><option>Thumbnail / Canva Design</option><option>Color Grading</option><option>Motion Graphics</option></select></label></div><label>Project Details<textarea name="details" required placeholder="Tell me about your project..."></textarea></label><button class="btn btn-red" type="submit">Send Order on WhatsApp →</button></form></div></div>
